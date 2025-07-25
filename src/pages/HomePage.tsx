@@ -26,6 +26,15 @@ const HomePage: React.FC = () => {
       path: "/dashboard",
       color: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     },
+    {
+      title: "Compound Components",
+      description:
+        "Explore production-grade, accessible compound UI components (Tabs, Accordion, Dropdown, Modal, Form, Carousel, and more)",
+      icon: "🧩",
+      path: "/compound-components",
+      color:
+        "linear-gradient(135deg,rgb(255, 153, 102) 0%,rgb(2, 38, 240) 100%)",
+    },
   ];
 
   return (
@@ -34,8 +43,7 @@ const HomePage: React.FC = () => {
       <div
         style={{
           textAlign: "center",
-          marginBottom: "4rem",
-          padding: "3rem 0",
+          padding: "2rem 0",
         }}
       >
         <h1
@@ -45,10 +53,10 @@ const HomePage: React.FC = () => {
             background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            margin: "0 0 1rem 0",
+            margin: "0",
           }}
         >
-          React Layout Learning Showcase
+          React Learning Showcase
         </h1>
         <p
           style={{
@@ -60,11 +68,9 @@ const HomePage: React.FC = () => {
             marginRight: "auto",
           }}
         >
-          A comprehensive demonstration of React layout patterns, authentication
-          systems, and modern UI/UX practices built with TypeScript, Zustand,
-          and React Router.
+          A comprehensive demonstration of React patterns.
         </p>
-        <div
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -120,7 +126,7 @@ const HomePage: React.FC = () => {
           >
             Modern UI/UX
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Features Grid */}

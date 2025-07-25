@@ -8,6 +8,8 @@ import NavbarShowcasePage from "./pages/NavbarShowcasePage";
 import AsideShowcasePage from "./pages/AsideShowcasePage";
 import DashboardShowcasePage from "./pages/DashboardShowcasePage";
 import Footer from "./shared/components/Footer/Footer";
+// import KabanShowcasePage from "./pages/KabanShowcasePage";
+import CompoundComponentShowcasePage from "./pages/CompoundComponentShowcasePage";
 
 const App: React.FC = () => {
   return (
@@ -33,7 +35,7 @@ const App: React.FC = () => {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
               <h1 style={{ margin: 0, fontSize: "1.5rem", fontWeight: "bold" }}>
-                React Layout Showcase
+                React
               </h1>
               <span
                 style={{
@@ -43,7 +45,7 @@ const App: React.FC = () => {
                   fontSize: "0.875rem",
                 }}
               >
-                Learning Portfolio
+                Learning Project
               </span>
             </div>
 
@@ -74,58 +76,6 @@ const App: React.FC = () => {
                     Home
                   </Link>
                 </li>
-
-                <li>
-                  <Link
-                    to="/navbar"
-                    style={{
-                      color: "white",
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      transition: "opacity 0.2s",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.opacity = "0.8")
-                    }
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-                  >
-                    Navbar
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/dashboard"
-                    style={{
-                      color: "white",
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      transition: "opacity 0.2s",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.opacity = "0.8")
-                    }
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-                  >
-                    Dashboard
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/aside"
-                    style={{
-                      color: "white",
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      transition: "opacity 0.2s",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.opacity = "0.8")
-                    }
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-                  >
-                    Aside
-                  </Link>
-                </li>
               </ul>
             </nav>
           </div>
@@ -139,6 +89,11 @@ const App: React.FC = () => {
             <Route path="/navbar" element={<NavbarShowcasePage />} />
             <Route path="/dashboard" element={<DashboardShowcasePage />} />
             <Route path="/aside" element={<AsideShowcasePage />} />
+            {/* <Route path="/kaban" element={<KabanShowcasePage />} /> */}
+            <Route
+              path="/compound-components"
+              element={<CompoundComponentShowcasePage />}
+            />
           </Routes>
         </main>
 

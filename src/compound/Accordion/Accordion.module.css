@@ -1,0 +1,34 @@
+.accordion {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.accordion-item {
+  border-bottom: 1px solid #ececec;
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+.accordion-header {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #4f46e5;
+  transition: background 0.2s;
+}
+.accordion-header.open {
+  color: #1e293b;
+  background: #ece9ff;
+}
+.accordion-panel {
+  padding: 0.75rem 0 1.25rem 0.5rem;
+  color: #444;
+  font-size: 1rem;
+}

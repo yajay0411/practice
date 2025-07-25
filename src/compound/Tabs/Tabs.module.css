@@ -1,0 +1,31 @@
+.tabs {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.tabs-list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.tab {
+  background: none;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  color: #555;
+  transition: background 0.2s, color 0.2s;
+}
+.tab.active,
+.tab[aria-selected="true"] {
+  background: #ece9ff;
+  color: #4f46e5;
+  font-weight: 600;
+}
+.tab-panel {
+  padding: 1rem 0;
+}
