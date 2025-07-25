@@ -157,6 +157,7 @@ const Input: React.FC<InputProps> = (props) => {
   };
 
   const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
+    console.log(e);
     setFieldTouched(name, true);
     validateField(name);
   };
