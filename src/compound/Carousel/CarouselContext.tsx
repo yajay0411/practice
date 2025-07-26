@@ -6,6 +6,7 @@ type CarouselContextProps = {
   slideCount: number;
   next: () => void;
   prev: () => void;
+  visibleSlides: number;
 };
 
 export const CarouselContext = React.createContext<

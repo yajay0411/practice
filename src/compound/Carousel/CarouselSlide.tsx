@@ -8,7 +8,14 @@ export const CarouselSlide: React.FC<{
 }> = ({ index, children }) => {
   const context = useContext(CarouselContext);
   if (!context) throw new Error("CarouselSlide must be used within Carousel");
-  return context.activeIndex === index ? (
+  const { activeIndex, visibleSlides, slideCount } = context;
+  // Calculate visible indices (robust wrap-around)
+  const visibleIndices = Array.from(
+    { length: visibleSlides },
+    (_, i) => (activeIndex + i) % slideCount
+  );
+  const isVisible = visibleIndices.includes(index);
+  return isVisible ? (
     <div
       className={styles["carousel-slide"]}
       role="group"

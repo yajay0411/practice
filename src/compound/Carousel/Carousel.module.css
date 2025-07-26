@@ -10,6 +10,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+.carousel-slider {
+  display: flex;
+  flex-direction: row;
+  gap: var(--carousel-gap, 1rem);
+  width: 100%;
+}
 .carousel-slide {
   display: flex;
   align-items: center;
@@ -19,12 +25,13 @@
   color: #333;
   background: #f3f4f6;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  flex: 1 1 0;
+  min-width: 0;
 }
 .carousel-next,
 .carousel-prev {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   transform: translateY(-50%);
   background: #4f46e5;
   color: #fff;

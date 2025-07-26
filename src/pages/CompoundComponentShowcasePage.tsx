@@ -193,44 +193,93 @@ const CompoundComponentShowcasePage: React.FC = () => {
       </section>
       <section>
         <h2>Carousel</h2>
-        <Carousel>
+        <Carousel visibleSlides={3} gap="8px">
           <Carousel.Slide index={0}>
             <div
               style={{
-                height: 120,
+                width: "100%",
+                height: "100%",
                 background: "#eee",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              Slide 1
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=80"
+                alt="Unsplash Slide 1"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
           </Carousel.Slide>
           <Carousel.Slide index={1}>
             <div
               style={{
-                height: 120,
+                width: "100%",
+                height: "100%",
                 background: "#ddd",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              Slide 2
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80"
+                alt="Unsplash Slide 2"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
           </Carousel.Slide>
           <Carousel.Slide index={2}>
             <div
               style={{
-                height: 120,
+                width: "100%",
+                height: "100%",
                 background: "#ccc",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              Slide 3
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                alt="Unsplash Slide 3"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          </Carousel.Slide>
+          <Carousel.Slide index={3}>
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                background: "#ccc",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=400&q=80"
+                alt="Unsplash Slide 4"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
           </Carousel.Slide>
           <Carousel.Prev />

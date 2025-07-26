@@ -3,29 +3,29 @@ import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   const features = [
-    {
-      title: "Aside Layout System",
-      description:
-        "Flexible aside layout with multiple positions and configurations",
-      icon: "📐",
-      path: "/aside",
-      color: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-    },
-    {
-      title: "Dynamic Navbar",
-      description: "Configurable navbar with Zustand state management",
-      icon: "🧭",
-      path: "/navbar",
-      color: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-    },
-    {
-      title: "Dashboard Layout",
-      description:
-        "Classic dashboard layout with persistent navbar, sidebar, and dynamic main content.",
-      icon: "📊",
-      path: "/dashboard",
-      color: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    },
+    // {
+    //   title: "Aside Layout System",
+    //   description:
+    //     "Flexible aside layout with multiple positions and configurations",
+    //   icon: "📐",
+    //   path: "/aside",
+    //   color: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    // },
+    // {
+    //   title: "Dynamic Navbar",
+    //   description: "Configurable navbar with Zustand state management",
+    //   icon: "🧭",
+    //   path: "/navbar",
+    //   color: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    // },
+    // {
+    //   title: "Dashboard Layout",
+    //   description:
+    //     "Classic dashboard layout with persistent navbar, sidebar, and dynamic main content.",
+    //   icon: "📊",
+    //   path: "/dashboard",
+    //   color: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    // },
     {
       title: "Compound Components",
       description:
@@ -157,6 +157,7 @@ const HomePage: React.FC = () => {
                 border: "1px solid #e5e7eb",
                 transition: "all 0.3s ease",
                 cursor: "pointer",
+                maxWidth: 420,
                 minHeight: 320,
                 height: 320,
                 display: "flex",
